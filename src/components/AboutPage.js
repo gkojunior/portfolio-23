@@ -15,16 +15,15 @@ const AboutPage = () => {
 					</div>
 
 					<p>
-						Hi! I am George Owusu, a Full-Stack Software Developer. I am an
-						aspiring web/mobile developer seeking an entry-level engineering
-						position that leverages my educational background, knowledge, skill
-						set, and passion for software development. With my current knowlegde
-						and recent certifications, my goal is to add value to any business
-						and contribute to organizational operations.
+						Hi! I am George Owusu, a Software Developer. I am a web
+						developer seeking an entry-level engineering position that leverages
+						my educational background, knowledge, skill set, and passion for
+						software development. With my current knowlegde and recent
+						certifications, my goal is to add value to any business and
+						contribute to organizational operations.
 					</p>
 				</article>
 			</Wrapper>
-			
 		</main>
 	)
 }

@@ -50,8 +50,8 @@ body {
 	background-color: var(--body_background);
 }
 .body {
-	/* background: linear-gradient(rgb(44, 174, 186, 0.5), rgba(0, 0, 0, 0.5)),
-		url('./assets/main.jpg'); */
+	background: linear-gradient(rgb(44, 174, 186, 0.5), rgba(0, 0, 0, 0.5)),
+		url('./assets/main.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }

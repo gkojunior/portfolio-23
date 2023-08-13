@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import Certification from './CertificationMessage'
 import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-import { BsInstagram } from 'react-icons/bs'
 
 const Welcome = () => {
 	return (
@@ -25,9 +24,6 @@ const Welcome = () => {
 							</a>
 							<a className='link' href='/#'>
 								<AiFillFacebook />
-							</a>
-							<a className='link' href='/#'>
-								<BsInstagram />
 							</a>
 						</nav>
 					</footer>

@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-import { BsInstagram } from 'react-icons/bs'
 
 const Footer = () => {
 	return (
@@ -12,18 +11,15 @@ const Footer = () => {
 			</h5>
 			<footer>
 				<nav className='link'>
-					<a className='link' href='/#'>
+					<a className='link' href='https://www.linkedin.com/in/george-owusu-2a853411b/'>
 						<AiFillLinkedin />
 					</a>
 
-					<a className='link' href='/#'>
+					<a className='link' href='https://github.com/gkojunior'>
 						<AiFillGithub />
 					</a>
-					<a className='link' href='/#'>
+					<a className='link' href='https://gkojunior.github.io/personal-portfolio/'>
 						<AiFillFacebook />
-					</a>
-					<a className='link' href='/#'>
-						<BsInstagram />
 					</a>
 				</nav>
 			</footer>
