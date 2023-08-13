@@ -6,7 +6,6 @@ import { HiMenuAlt3 } from 'react-icons/hi'
 import DarkMode from './DarkMode/DarkMode'
 // import { socialLinks } from '../utils/data'
 import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-import { BsInstagram } from 'react-icons/bs'
 
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false)
@@ -18,18 +17,21 @@ const Navbar = () => {
 			<nav className={toggle ? 'navbar expanded' : 'navbar'}>
 				<h2 className='logo'>George Owusu Jr</h2>
 				<nav className='socialMediaLink'>
-					<a className='link' href='/#'>
+					<a
+						className='link'
+						href='https://www.linkedin.com/in/george-owusu-2a853411b/'
+					>
 						<AiFillLinkedin />
 					</a>
 
-					<a className='link' href='/#'>
+					<a className='link' href='https://github.com/gkojunior'>
 						<AiFillGithub />
 					</a>
-					<a className='link' href='/#'>
+					<a
+						className='link'
+						href='https://www.facebook.com/george.gmoney'
+					>
 						<AiFillFacebook />
-					</a>
-					<a className='link' href='/#'>
-						<BsInstagram />
 					</a>
 				</nav>
 
@@ -107,7 +109,6 @@ const NavContainer = styled.nav`
 		list-style: none;
 		font-size: 1.2rem;
 		color: black;
-
 	}
 	.nav-icons {
 		display: flex;
