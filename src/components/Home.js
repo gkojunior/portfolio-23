@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import Welcome from './Welcome'
 import Skills from './Skills'
 import Connect from './connect'
+import Projects from './Projects'
+import ContactPage from './ContactPage'
 
 function Home() {
 	return (
@@ -11,7 +13,9 @@ function Home() {
 				<Welcome />
 				<Skills />
 				<Certifications />
-				<Connect/>
+				<Projects/>
+				<Connect />
+				<ContactPage/>
 			</main>
 		</Wrapper>
 	)

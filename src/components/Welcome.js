@@ -9,7 +9,7 @@ const Welcome = () => {
 			<article className='content'>
 				<div>
 					<h1 className='welcomeMessage'>Welcome! I'm George,</h1>
-					<h2 className='welcomeMessage'>Software Engineer based In Virginia</h2>
+					<h2 className='welcomeMessage'>Software Engineer based in Virginia!</h2>
 				</div>
 				<div>
 					<Certification />
@@ -38,12 +38,21 @@ const Wrapper = styled.section`
 	text-align: center;
 	justify-content: center;
 	h1 {
-		padding-top: 9.5em;
+		padding-top: 7em;
 	}
 	@media screen and (max-width: 320px) {
-		height: 50vh;
+		height: 80vh;
 		h1 {
-			padding-top: 3em;
+			
+			padding-top: 6em;
+			font-size:.5rem;
+		}
+	  }
+	  @media screen and (max-width: 425px) {
+		height: 80vh;
+
+		h1 {
+			padding-top: 6em;
 		}
 	  }
 	
