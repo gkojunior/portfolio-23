@@ -43,9 +43,7 @@ const Wrapper = styled.section`
 	@media screen and (max-width: 320px) {
 		height: 80vh;
 		h1 {
-			
 			padding-top: 6em;
-			font-size:.5rem;
 		}
 	  }
 	  @media screen and (max-width: 425px) {
