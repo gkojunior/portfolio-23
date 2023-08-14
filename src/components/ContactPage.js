@@ -25,7 +25,6 @@ const ContactPage = () => {
 	)
 }
 const Wrapper = styled.section`
-	height: 80vh;
 	.section {
 		margin-top: 5rem;
 	}
@@ -46,7 +45,6 @@ const Wrapper = styled.section`
 		color: var(--body_color_brown);
 	}
 	.section-title {
-		margin-bottom: 4rem;
 		text-align: center;
 	}
 	.underline {

@@ -2,7 +2,7 @@
 	/* primary/main color */
 	--clr-brown-light: hsl(21, 98%, 82%, 0.88);
 
-	--clr-brown: hsla(21, 31%, 52%, 0.883);
+	--clr-brown: hsla(21, 88%, 59%, 0.883);
 	--clr-brown-dark: hsla(21, 46%, 47%, 0.85);
 	--clr-white: hsl(0, 0%, 100%);
 	--clr-black: #222;
@@ -109,7 +109,7 @@ img:not(.nav-logo) {
 	display: block;
 }
 .welcomeMessage {
-	color: orange;
+	color: var(--clr-brown);
 }
 
 /* section */

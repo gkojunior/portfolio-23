@@ -91,45 +91,11 @@ export const project = [
 	{
 		id: 5,
 		image: Nursery,
-		date: 'october 1th, 2020',
+		date: 'June 2023',
 		title: 'Vacation Blog',
 		info: 'Check out all the places I have been!',
 		language: 'React.JS',
 	},
-]
-
-export const projects = [
-	{
-		id: 1,
-		url: '',
-		images: Nursery,
-		title: 'Nursery Finds',
-		description:
-			'(Node.JS/React) This E-Commerce app allows user to create a post to sell their baby products. I was apart of the backend team',
-	},
-	{
-		id: 2,
-		url: 'https://family-tasks-list-1.onrender.com',
-		images: FamilyApp,
-		title: 'Family Task',
-		description:
-			'(Node.JS) Family oriented to-do application using Node.js, HTML, CSS, and JavaScript. I created this app during the Node coarse',
-	},
-	{
-		id: 4,
-		url: 'https://github.com/gkojunior/hacker-stories',
-		images: HackerStories,
-		title: 'Hacker Stories',
-		description:
-			'(React) This is the first React App I created with Code the Dream following the Road to React Hand book.It was amazing learning React',
-	},
-	{
-		id: 3,
-		url: 'https://github.com/gkojunior/food-order-app',
-		images: Volunteer,
-		title: 'Volunteer App',
-		description:
-			'(React/Node.JS) This application allows user to create a job post for anyone looking to volunteer for a quick job.',
-	},
+	
 ]
 

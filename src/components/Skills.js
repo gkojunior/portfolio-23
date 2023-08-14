@@ -8,7 +8,7 @@ const Skills = () => {
 			<div>
 				<section className='section skills'>
 					<div className='section-title'>
-					<Title title='my' subTitle='skills' />
+						<Title title='my' subTitle='skills' />
 						<div className='underline'></div>
 					</div>
 
@@ -61,8 +61,8 @@ const Skills = () => {
 							<div class='skill'>
 								<p>Python</p>
 								<div className='skill-container'>
-									<div className='skill-value value-20'></div>
-									<p className='skill-text skill-text-20'>20%</p>
+									<div className='skill-value value-30'></div>
+									<p className='skill-text skill-text-30'>30%</p>
 								</div>
 							</div>
 						</article>
@@ -73,11 +73,11 @@ const Skills = () => {
 	)
 }
 const Wrapper = styled.section`
-	height: 90vh;
+	height: 100vh;
 	margin-top: 5rem;
 
 	.section-title {
-		margin-bottom: 4rem;
+		margin-bottom: 0.5rem;
 		text-align: center;
 		color: var(--body_color_white);
 	}
@@ -125,8 +125,8 @@ const Wrapper = styled.section`
 		width: 90%;
 		border-radius: 50px;
 	}
-	.value-20 {
-		width: 20%;
+	.value-30 {
+		width: 30%;
 		color: var(--body_color_white);
 	}
 	.value-50 {
@@ -153,8 +153,8 @@ const Wrapper = styled.section`
 		-webkit-transform: translateX(-50%);
 		transform: translateX(-50%);
 	}
-	.skill-text-20 {
-		left: 20%;
+	.skill-text-30 {
+		left: 30%;
 	}
 	.skill-text-50 {
 		left: 50%;
