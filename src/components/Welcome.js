@@ -40,15 +40,17 @@ const Wrapper = styled.section`
 	h1 {
 		padding-top: 7em;
 	}
-	@media screen and (max-width: 320px) {
-		height: 80vh;
+	.link {
+		font-size: 2rem;
+		padding: 5px 20px;
+		color: white;
+	}
+@media screen and (max-width: 320px) {
 		h1 {
-			padding-top: 6em;
+			padding-top: 8em;
 		}
 	  }
 	  @media screen and (max-width: 425px) {
-		height: 80vh;
-
 		h1 {
 			padding-top: 6em;
 		}
@@ -57,8 +59,18 @@ const Wrapper = styled.section`
 	.link {
 		font-size: 2rem;
 		padding: 5px 20px;
-		color: white;
+		color: black;
 	}
+	@media screen and (min-width: 768px) {
+		h1 {
+			padding-top: 5em;
+		}
+		.link {
+			font-size: 2rem;
+			padding: 5px 20px;
+			color: white;
+		}
+	  }
 `
 
 export default Welcome

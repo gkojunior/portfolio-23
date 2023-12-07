@@ -4,7 +4,6 @@ import Welcome from './Welcome'
 import Skills from './Skills'
 import Connect from './connect'
 import Projects from './Projects'
-import ContactPage from './ContactPage'
 
 function Home() {
 	return (
@@ -15,7 +14,6 @@ function Home() {
 				<Certifications />
 				<Projects/>
 				<Connect />
-				<ContactPage/>
 			</main>
 		</Wrapper>
 	)
