@@ -45,7 +45,7 @@ const Wrapper = styled.section`
 		padding: 5px 20px;
 		color: white;
 	}
-	@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {
 		h1 {
 			padding-top: 8em;
 		}
