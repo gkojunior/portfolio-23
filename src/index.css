@@ -242,7 +242,7 @@ Project Section
 .project-info {
 	padding: 1.25rem 1.5rem;
 }
-/* additional css for different layout*/
+
 .project-title {
 	display: flex;
 	justify-content: space-between;
