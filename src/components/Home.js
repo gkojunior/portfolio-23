@@ -9,6 +9,7 @@ function Home() {
 	return (
 		<Wrapper>
 			<main>
+		
 				<Welcome />
 				<Skills />
 				<Certifications />

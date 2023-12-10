@@ -2,6 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import Title from './Title'
 
+// Animation
+import Lottie from 'lottie-react'
+import animationData from '../assets/bg1.json'
+
 const Skills = () => {
 	return (
 		<Wrapper>
@@ -66,6 +70,9 @@ const Skills = () => {
 								</div>
 							</div>
 						</article>
+						<div className='clock'>
+							<Lottie animationData={animationData} />
+						</div>
 					</div>
 				</section>
 			</div>
@@ -73,9 +80,13 @@ const Skills = () => {
 	)
 }
 const Wrapper = styled.section`
-	height: 100vh;
-	margin-top: 5rem;
-
+	height: 80vh;
+	margin-top: 7rem;
+	.clock {
+		align-items: center;
+		align-contents: center;
+		width: 250px;
+	}
 	.section-title {
 		margin-bottom: 0.5rem;
 		text-align: center;
@@ -92,6 +103,9 @@ const Wrapper = styled.section`
 			-webkit-column-gap: 2rem;
 			-moz-column-gap: 2rem;
 			column-gap: 2rem;
+		}
+		.clock{
+			display:none;
 		}
 	}
 	.skills {

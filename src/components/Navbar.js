@@ -3,10 +3,13 @@ import styled from 'styled-components'
 // import logo1 from '../../../assets/logo1.png'
 import { FaTimes } from 'react-icons/fa'
 import { HiMenuAlt3 } from 'react-icons/hi'
+import { AiTwotoneHome } from 'react-icons/ai'
+
 import DarkMode from './DarkMode/DarkMode'
 // import { socialLinks } from '../utils/data'
 import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-
+import { Link } from 'react-router-dom'
+import robot from '../assets/robot.gif'
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false)
 	const handleToggle = () => {
@@ -15,7 +18,18 @@ const Navbar = () => {
 	return (
 		<NavContainer>
 			<nav className={toggle ? 'navbar expanded' : 'navbar'}>
-				<h2 className='logo'>George Owusu Jr</h2>
+				<div className='logoContainer'>
+					<h1 className='logo'>George Owusu Jr</h1>
+					<img src={robot} alt='robot' className='robot' />
+				</div>
+
+
+				<ul className='links'>
+					<li>
+						<Link href='/'>
+							<AiTwotoneHome />
+						</Link>
+					</li>
 				<nav className='socialMediaLink'>
 					<a
 						className='link'
@@ -27,24 +41,25 @@ const Navbar = () => {
 					<a className='link' href='https://github.com/gkojunior'>
 						<AiFillGithub />
 					</a>
-					<a
-						className='link'
-						href='https://www.facebook.com/george.gmoney'
-					>
+					<a className='link' href='https://www.facebook.com/george.gmoney'>
 						<AiFillFacebook />
 					</a>
 				</nav>
-
-				<ul className='links'>
 					<li>
-						<a href='/'>Home</a>
+						<Link href='/about'>About</Link>
 					</li>
 					<li>
-						<a href='/about'>About</a>
+						<Link href='/skills'>Skills</Link>
 					</li>
-					{/* <li>
-						<a href='/contact'>Contact</a>
-					</li> */}
+					<li>
+						<Link href='/certification'>Certifications</Link>
+					</li>
+					<li>
+						<Link href='/project'>Projects</Link>
+					</li>
+					<li>
+						<Link href='/contact'>Contact</Link>
+					</li>
 				</ul>
 				<div className='toogle' onClick={handleToggle}>
 					{toggle ? <FaTimes /> : <HiMenuAlt3 />}
@@ -66,6 +81,10 @@ const NavContainer = styled.nav`
 	padding: 1em;
 	align-items: center;
 	justify-content: center;
+	.logoContainer{
+		display:flex;
+		align-items:center;
+	}
 	.navbar {
 		width: 100%;
 		height: 50px;
@@ -73,6 +92,10 @@ const NavContainer = styled.nav`
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+	.robot {
+		width: 90px;
+		height: 90px;
 	}
 
 	.navbar .logo {
@@ -113,6 +136,12 @@ const NavContainer = styled.nav`
 	}
 
 	@media (max-width: 768px) {
+		.robot {
+			position: absolute;
+			top: 0;
+			right: 35px;
+
+		}
 		.navbar {
 			position: relative;
 			transition: 0.5s height ease-in-out;
