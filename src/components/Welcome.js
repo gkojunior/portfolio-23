@@ -3,14 +3,25 @@ import styled from 'styled-components'
 import Certification from './CertificationMessage'
 import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
+// Animation
+import Lottie from 'lottie-react'
+import animationData from '../assets/bg2.json'
 const Welcome = () => {
 	return (
-		<Wrapper className='body'>
+		<Wrapper >
 			<article className='content'>
-				<div>
-					<h1 className='welcomeMessage'>Welcome! I'm George,</h1>
-					<h2 className='welcomeMessage'>Software Engineer based in Virginia!</h2>
+				<div className='bg'>
+					<Lottie animationData={animationData} />
 				</div>
+
+				<div className='body'>
+					<div >
+					<h1 className='welcomeMessage'>Welcome! I'm George,</h1>
+					<h2 className='welcomeMessage'>
+						Software Engineer based in Virginia!
+					</h2>
+				</div>
+
 				<div>
 					<Certification />
 					<footer>
@@ -28,6 +39,8 @@ const Welcome = () => {
 						</nav>
 					</footer>
 				</div>
+				</div>
+				
 			</article>
 		</Wrapper>
 	)
@@ -45,17 +58,29 @@ const Wrapper = styled.section`
 		padding: 5px 20px;
 		color: white;
 	}
-@media screen and (max-width: 320px) {
+	@media screen and (max-width: 320px) {
 		h1 {
 			padding-top: 8em;
 		}
-	  }
-	  @media screen and (max-width: 425px) {
+		.bg{
+			display:none;
+		}
+		.body{
+			display:contents;
+		}
+	}
+	@media screen and (max-width: 425px) {
 		h1 {
 			padding-top: 6em;
 		}
-	  }
-	
+		.bg{
+			display:none;
+		}
+		.body{
+			display:contents;
+		}
+	}
+
 	.link {
 		font-size: 2rem;
 		padding: 5px 20px;
@@ -70,7 +95,10 @@ const Wrapper = styled.section`
 			padding: 5px 20px;
 			color: white;
 		}
-	  }
+		.body{
+			display:none;
+		}
+	}
 `
 
 export default Welcome

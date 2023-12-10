@@ -15,14 +15,7 @@ const Projects = () => {
 				})}
 			</div>
 
-			{/* <div className='message'>
-				<h4>
-					More Projects can be found on my
-					<a href='https://github.com/gkojunior'>
-						<AiFillGithub />
-					</a>
-				</h4>
-			</div> */}
+			
 		</section>
 	)
 }
