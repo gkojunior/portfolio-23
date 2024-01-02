@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { projects } from './utils/data'
 import Project from './Project'
 import Title from './Title'
