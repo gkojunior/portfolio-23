@@ -7,7 +7,6 @@ import { AiTwotoneHome } from 'react-icons/ai'
 
 import DarkMode from './DarkMode/DarkMode'
 // import { socialLinks } from '../utils/data'
-import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import robot from '../assets/robot.gif'
 const Navbar = () => {
