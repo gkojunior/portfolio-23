@@ -23,42 +23,22 @@ const Navbar = () => {
 					<img src={robot} alt='robot' className='robot' />
 				</div>
 
-
 				<ul className='links'>
 					<li>
-						<Link href='/'>
+						<Link to='/'>
 							<AiTwotoneHome />
 						</Link>
 					</li>
-				<nav className='socialMediaLink'>
-					<a
-						className='link'
-						href='https://www.linkedin.com/in/george-owusu-2a853411b/'
-					>
-						<AiFillLinkedin />
-					</a>
-
-					<a className='link' href='https://github.com/gkojunior'>
-						<AiFillGithub />
-					</a>
-					<a className='link' href='https://www.facebook.com/george.gmoney'>
-						<AiFillFacebook />
-					</a>
-				</nav>
+					
 					<li>
-						<Link href='/about'>About</Link>
+						<Link to='/about'>About</Link>
+					</li>
+				
+					<li>
+						<Link to='/projects'>Projects</Link>
 					</li>
 					<li>
-						<Link href='/skills'>Skills</Link>
-					</li>
-					<li>
-						<Link href='/certification'>Certifications</Link>
-					</li>
-					<li>
-						<Link href='/project'>Projects</Link>
-					</li>
-					<li>
-						<Link href='/contact'>Contact</Link>
+						<Link to='/contact'>Contact</Link>
 					</li>
 				</ul>
 				<div className='toogle' onClick={handleToggle}>
@@ -81,9 +61,9 @@ const NavContainer = styled.nav`
 	padding: 1em;
 	align-items: center;
 	justify-content: center;
-	.logoContainer{
-		display:flex;
-		align-items:center;
+	.logoContainer {
+		display: flex;
+		align-items: center;
 	}
 	.navbar {
 		width: 100%;
@@ -94,8 +74,8 @@ const NavContainer = styled.nav`
 		align-items: center;
 	}
 	.robot {
-		width: 90px;
-		height: 90px;
+		width: 80px;
+		height: 80px;
 	}
 
 	.navbar .logo {
@@ -137,10 +117,8 @@ const NavContainer = styled.nav`
 
 	@media (max-width: 768px) {
 		.robot {
-			position: absolute;
-			top: 0;
-			right: 35px;
-
+			position: fixed;
+			left: 168px;
 		}
 		.navbar {
 			position: relative;
@@ -203,7 +181,11 @@ const NavContainer = styled.nav`
 			color: rgb(0, 0, 0);
 		}
 		.darkmode {
-			margin-left: 10.5rem;
+			margin-right: 10%;
+			position: fixed;
+			top:20;
+			right:25px;
+			
 		}
 	}
 `

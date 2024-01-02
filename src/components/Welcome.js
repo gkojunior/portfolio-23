@@ -5,15 +5,16 @@ import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 // Animation
 import Lottie from 'lottie-react'
-import animationData from '../assets/bg2.json'
+import bgAnimationData from '../assets/bg2.json'
+
 const Welcome = () => {
 	return (
 		<Wrapper >
 			<article className='content'>
-				<div className='bg'>
-					<Lottie animationData={animationData} />
+				
+			<div className='bg'>
+					<Lottie bgAnimationData={bgAnimationData} />
 				</div>
-
 				<div className='body'>
 					<div >
 					<h1 className='welcomeMessage'>Welcome! I'm George,</h1>
@@ -42,6 +43,9 @@ const Welcome = () => {
 				</div>
 				
 			</article>
+			<div className='bg'>
+					<Lottie animationData={bgAnimationData} />
+				</div>
 		</Wrapper>
 	)
 }

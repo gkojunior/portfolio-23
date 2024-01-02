@@ -54,7 +54,7 @@ export const people = [
 			"I truly thank God I have a son like my little man, he's strong, intelligent, and handsome.",
 	},
 ]
-export const project = [
+export const projects = [
 	{
 		id: 1,
 		image: Nursery,
@@ -105,11 +105,31 @@ export const project = [
 	{
 		id: 6,
 		image: Nursery,
-		date: 'December 2023',
+		date: 'November 2023',
 		title: 'Amazon Best Sellers',
 		info: 'These are some of amazon best selling book!',
 		language: 'React.JS',
 		href: 'https://amazon-best-sellers23.netlify.app'
+
+	},
+	{
+		id: 7,
+		image: HackerStories,
+		date: 'December 2023',
+		title: 'Reviews App',
+		info: 'This is a eact app using a slider',
+		language: 'React.JS',
+		href: 'https://frabjous-trifle-804aef.netlify.app/'
+
+	},
+	{
+		id: 8,
+		image: HackerStories,
+		date: 'July 2023',
+		title: 'To-do List',
+		info: 'This is a eact app using a slider',
+		language: 'React.JS',
+		href: 'https://gkojunior.github.io/ctd-react-albatross/'
 
 	},
 	
