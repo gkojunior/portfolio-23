@@ -1,14 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import Title from './Title'
 
 const ContactPage = () => {
 	return (
 		<Wrapper>
 			<section className='section single-page'>
-				<div className='section-title'>
-					<h1>Contact</h1>
-					<div className='underline'></div>
-				</div>
+				<Title title='contact' subTitle='me'/>
 
 				<div className='section-center page-info'>
 					<p>

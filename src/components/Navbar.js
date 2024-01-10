@@ -3,12 +3,11 @@ import styled from 'styled-components'
 // import logo1 from '../../../assets/logo1.png'
 import { FaTimes } from 'react-icons/fa'
 import { HiMenuAlt3 } from 'react-icons/hi'
-import { AiTwotoneHome } from 'react-icons/ai'
 
 import DarkMode from './DarkMode/DarkMode'
 // import { socialLinks } from '../utils/data'
 import { Link } from 'react-router-dom'
-import robot from '../assets/robot.gif'
+import logo from '../assets/logo1.png'
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false)
 	const handleToggle = () => {
@@ -18,21 +17,19 @@ const Navbar = () => {
 		<NavContainer>
 			<nav className={toggle ? 'navbar expanded' : 'navbar'}>
 				<div className='logoContainer'>
-					<h1 className='logo'>George Owusu Jr</h1>
-					<img src={robot} alt='robot' className='robot' />
+					{/* <img src={logo} alt='logo' className='logo' /> */}
+					<h4>George K Owusu Jr</h4>
 				</div>
 
 				<ul className='links'>
 					<li>
-						<Link to='/'>
-							<AiTwotoneHome />
-						</Link>
+						<Link to='/'>Home</Link>
 					</li>
-					
+
 					<li>
 						<Link to='/about'>About</Link>
 					</li>
-				
+
 					<li>
 						<Link to='/projects'>Projects</Link>
 					</li>
@@ -60,6 +57,7 @@ const NavContainer = styled.nav`
 	padding: 1em;
 	align-items: center;
 	justify-content: center;
+
 	.logoContainer {
 		display: flex;
 		align-items: center;
@@ -72,19 +70,19 @@ const NavContainer = styled.nav`
 		justify-content: space-between;
 		align-items: center;
 	}
-	.robot {
-		width: 80px;
+	.logo {
+		width: 150px;
 		height: 80px;
 	}
 
 	.navbar .logo {
-		color: black;
+		color: rgb(173, 173, 173);
 		font-size: 1.1rem;
 		font-weight: 600;
 	}
 
 	.navbar .links {
-		color: black;
+		color: burlywood;
 		display: flex;
 		cursor: pointer;
 		list-style: none;
@@ -97,6 +95,14 @@ const NavContainer = styled.nav`
 	}
 	.navbar .links li a {
 		text-decoration: none;
+		color: var(--clr-brown);
+		padding-top: 1rem;
+	}
+	.navbar .links li a:hover {
+		text-decoration: none;
+		color: blue;
+		padding: 1rem;
+		border-bottom: 2px solid burlywood;
 	}
 
 	.navbar .toogle {
@@ -107,11 +113,7 @@ const NavContainer = styled.nav`
 		text-decoration: none;
 		list-style: none;
 		font-size: 1.2rem;
-		color: black;
-	}
-	.nav-icons {
-		display: flex;
-		color: green;
+		color: var(--clr-brown);
 	}
 
 	@media (max-width: 768px) {
@@ -147,7 +149,7 @@ const NavContainer = styled.nav`
 		}
 		.navbar .logo {
 			position: absolute;
-			top: 23px;
+			top: 0px;
 			left: 20px;
 		}
 		.navbar .toogle {
@@ -177,14 +179,17 @@ const NavContainer = styled.nav`
 		}
 
 		.navbar.expanded .links li a {
-			color: rgb(0, 0, 0);
+			color: var(--clr-brown);
 		}
+		.navbar.expanded .links li a:hover {
+			color: var(--blue);
+		}
+		
 		.darkmode {
 			margin-right: 10%;
 			position: fixed;
-			top:20;
-			right:25px;
-			
+			top: 20;
+			right: 25px;
 		}
 	}
 `

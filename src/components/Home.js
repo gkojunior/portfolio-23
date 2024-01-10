@@ -3,23 +3,26 @@ import styled from 'styled-components'
 import Welcome from './Welcome'
 import Skills from './Skills'
 import Connect from './connect'
-import Projects from './Projects'
 
 function Home() {
 	return (
 		<Wrapper>
-			<main>
-		
-				<Welcome />
-				<Skills />
-				<Certifications />
-				<Projects/>
-				<Connect />
-			</main>
+			<Welcome />
+			<Skills />
+			<Certifications />
+			<Connect />
 		</Wrapper>
 	)
 }
 
 export default Home
 
-const Wrapper = styled.section``
+const Wrapper = styled.section`
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+	overflow-y: auto;
+	scrollbar-width: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+`

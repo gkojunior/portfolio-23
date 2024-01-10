@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import Title from './Title'
 
 // Animation
-import Lottie from 'lottie-react'
-import animationData from '../assets/bg1.json'
+// import Lottie from 'lottie-react'
+// import animationData from '../assets/bg1.json'
 
 const Skills = () => {
 	return (
@@ -13,7 +13,6 @@ const Skills = () => {
 				<section className='section skills'>
 					<div className='section-title'>
 						<Title title='my' subTitle='skills' />
-						<div className='underline'></div>
 					</div>
 
 					<div className='section-center skills-center'>
@@ -62,7 +61,7 @@ const Skills = () => {
 								</div>
 							</div>
 
-							<div class='skill'>
+							<div className='skill'>
 								<p>Python</p>
 								<div className='skill-container'>
 									<div className='skill-value value-30'></div>
@@ -70,9 +69,6 @@ const Skills = () => {
 								</div>
 							</div>
 						</article>
-						<div className='clock'>
-							<Lottie animationData={animationData} />
-						</div>
 					</div>
 				</section>
 			</div>
@@ -80,13 +76,9 @@ const Skills = () => {
 	)
 }
 const Wrapper = styled.section`
-	height: 80vh;
-	margin-top: 7rem;
-	.clock {
-		align-items: center;
-		align-contents: center;
-		width: 250px;
-	}
+background: var(--body_background2);
+scroll-snap-align:center;
+height: 100vh;
 	.section-title {
 		margin-bottom: 0.5rem;
 		text-align: center;
@@ -95,8 +87,14 @@ const Wrapper = styled.section`
 	.section-title h2 {
 		padding: 1rem;
 	}
+	@media screen and (min-width: 320px) {
+		height: 80vh;
+
+	}
 
 	@media screen and (min-width: 768px) {
+		height: 100vh;
+
 		.skills-center {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
@@ -104,13 +102,11 @@ const Wrapper = styled.section`
 			-moz-column-gap: 2rem;
 			column-gap: 2rem;
 		}
-		.clock{
-			display:none;
+		.clock {
+			display: none;
 		}
 	}
-	.skills {
-		background: var(--body_background);
-	}
+	
 	.skills h3 {
 		margin: 1.5rem 0;
 		color: var(--body_color_brown);
@@ -155,8 +151,7 @@ const Wrapper = styled.section`
 	.underline {
 		width: 6rem;
 		height: 0.25rem;
-		background: #49a6e9;
-		background: var(--clr-brown);
+		background: blue;
 		margin-left: auto;
 		margin-right: auto;
 	}

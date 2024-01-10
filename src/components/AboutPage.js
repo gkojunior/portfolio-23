@@ -2,16 +2,18 @@ import React from 'react'
 import styled from 'styled-components'
 import aboutImg from '../assets/photo.jpeg'
 import Title from './Title'
+import Main from './Main'
+
 
 const AboutPage = () => {
 	return (
 		<main>
+
 			<Wrapper className='page section section-center'>
 				<img src={aboutImg} alt='lady in beads' />
 				<article>
 					<div>
 						<Title title='about' subTitle='me' />
-						<div className='underline'></div>
 					</div>
 
 					<p>
@@ -24,6 +26,7 @@ const AboutPage = () => {
 					</p>
 				</article>
 			</Wrapper>
+			
 		</main>
 	)
 }
@@ -50,10 +53,7 @@ const Wrapper = styled.section`
 		padding-bottom: 10px;
 		color: var(--body_color_white);
 	}
-	.underline {
-		margin-left: 0;
-		margin-top: 10px;
-	}
+
 	@media (min-width: 992px) {
 		grid-template-columns: 1fr 1fr;
 	}

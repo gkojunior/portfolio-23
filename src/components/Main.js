@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import heroBcg from '../../../assets/bg3.jpg'
+import heroBcg from '../assets/ME.jpg'
 
 const Main = () => {
 	return (
