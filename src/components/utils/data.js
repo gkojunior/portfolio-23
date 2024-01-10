@@ -6,10 +6,12 @@ import Imani from '../../assets/CustReviews/imani.jpeg'
 import Kyrie from '../../assets/CustReviews/kyrie.jpeg'
 
 // Projects Pics
-import Nursery from '../../assets/projectPics/p2.jpg'
-import FamilyApp from '../../assets/projectPics/p4.jpg'
+import Nursery from '../../assets/projectPics/NurseryFind.png'
+import FamilyApp from '../../assets/projectPics/FT.png'
 import HackerStories from '../../assets/projectPics/p5.jpg'
-import Volunteer from '../../assets/projectPics/p6.jpg'
+import Volunteer from '../../assets/projectPics/volunteer.png'
+import VacationBlog from '../../assets/projectPics/vacationBlog.png'
+import Booklist from '../../assets/projectPics/booklist.png'
 
 export const people = [
 	{
@@ -61,7 +63,7 @@ export const projects = [
 		date: 'october 1th, 2020',
 		title: 'Nursery Finds',
 		info: 'This E-Commerce app allows user to create a post to sell their baby products. I was apart of the backend tea',
-		language: 'React.JS & Node.JS',
+		category: 'Node',
 		href: 'https://nurseryfinds-2zrj.onrender.com/'
 	},
 	{
@@ -70,7 +72,7 @@ export const projects = [
 		date: 'october 1th, 2020',
 		title: 'Family Task',
 		info: 'Family oriented to-do application using Node.js, HTML, CSS, and JavaScript. I created this app during the Node coarse',
-		language: 'Node.JS',
+		category: 'Node',
 		href: 'https://family-tasks-list-1.onrender.com/'
 	},
 	{
@@ -79,7 +81,7 @@ export const projects = [
 		date: 'september 15th, 2020',
 		title: 'Hacker Stories',
 		info: 'This is the first React App I created with Code the Dream following the Road to React Hand book.It was amazing learning React',
-		language: 'React.JS',
+		category: 'React',
 		href: 'https://github.com/gkojunior/hacker-stories'
 	},
 	{
@@ -88,27 +90,27 @@ export const projects = [
 		date: 'december 5th, 2019',
 		title: 'Volunteer App',
 		info: '(React/Node.JS) This application allows user to create a job post for anyone looking to volunteer for a quick job.',
-		language: 'React.JS & Node.JS',
+		category: 'Node',
 		href: 'https://volunteerboard-d9r0.onrender.com/'
 
 	},
 	{
 		id: 5,
-		image: Nursery,
+		image: VacationBlog,
 		date: 'June 2023',
 		title: 'Vacation Blog',
 		info: 'Check out all the places I have been!',
-		language: 'React.JS',
+		category: 'React',
 		href: 'https://vacation-blog.netlify.app/'
 
 	},
 	{
 		id: 6,
-		image: Nursery,
+		image: Booklist,
 		date: 'November 2023',
 		title: 'Amazon Best Sellers',
 		info: 'These are some of amazon best selling book!',
-		language: 'React.JS',
+		category: 'React',
 		href: 'https://amazon-best-sellers23.netlify.app'
 
 	},
@@ -118,7 +120,7 @@ export const projects = [
 		date: 'December 2023',
 		title: 'Reviews App',
 		info: 'This is a eact app using a slider',
-		language: 'React.JS',
+		category: 'React',
 		href: 'https://frabjous-trifle-804aef.netlify.app/'
 
 	},
@@ -128,7 +130,17 @@ export const projects = [
 		date: 'July 2023',
 		title: 'To-do List',
 		info: 'This is a eact app using a slider',
-		language: 'React.JS',
+		category: 'React',
+		href: 'https://gkojunior.github.io/ctd-react-albatross/'
+
+	},
+	{
+		id: 9,
+		image: HackerStories,
+		date: 'July 2023',
+		title: 'To-do List',
+		info: 'This is a eact app using a slider',
+		category: 'JavaScript',
 		href: 'https://gkojunior.github.io/ctd-react-albatross/'
 
 	},

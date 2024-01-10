@@ -1,16 +1,14 @@
 import React from 'react'
 import { certifications } from './utils/constants'
-
+import Title from './Title.js'
 import styled from 'styled-components'
 
 const Certifications = () => {
 	return (
 		<Wrapper>
 			<div className='section-center'>
-			<div className='section-title'>
-						<h2>Certifications</h2>
-						<div className='underline'></div>
-					</div>
+				<Title title='my' subTitle='certifications' />
+
 				<div className='services-center'>
 					{certifications.map((service) => {
 						const { id, icon, title, text } = service
@@ -29,17 +27,19 @@ const Certifications = () => {
 }
 
 const Wrapper = styled.section`
+	scroll-snap-align: center;
+	height: 100vh;
 	padding: 5rem 0;
 	background: var(--body_background2);
 	.section-title {
 		margin-bottom: 4rem;
 		text-align: center;
 		color: var(--body_color_white);
-	  
-	  }
-	.section-title h2{
-		  padding: 1rem;
-	  }
+	}
+	.section-title h2 {
+		padding: 1rem;
+		text-transform: uppercase;
+	}
 	p {
 		margin-bottom: 0;
 		line-height: 1.8;
@@ -61,33 +61,11 @@ const Wrapper = styled.section`
 	.service:hover {
 		background: var(--body_color);
 		color: var(--clr-white);
-	  }
+	}
 	.service:hover p {
 		color: var(--clr-white);
-	  }
-	span {
-		width: 4rem;
-		height: 4rem;
-		display: grid;
-		margin: 0 auto;
-		place-items: center;
-		margin-bottom: 1rem;
-		border-radius: 50%;
-		background: hsl(21, 46%, 47%);
-		color: var(--body_color);
-		svg {
-			font-size: 2rem;
-		}
 	}
 
-	.underline {
-		width: 6rem;
-		height: 0.25rem;
-		background: #49a6e9;
-		background: var(--clr-brown);
-		margin-left: auto;
-		margin-right: auto;
-	}
 	@media (min-width: 992px) {
 		.header {
 			display: grid;

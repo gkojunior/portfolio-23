@@ -21,7 +21,7 @@ function Certification() {
 
 	return (
 		<div>
-			<h3 className='welcomeMessage'>
+			<h3 className='certificationMessage'>
 				I have Certification in <span ref={el} />
 			</h3>
 		</div>
