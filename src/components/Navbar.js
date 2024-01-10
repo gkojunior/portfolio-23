@@ -7,7 +7,6 @@ import { HiMenuAlt3 } from 'react-icons/hi'
 import DarkMode from './DarkMode/DarkMode'
 // import { socialLinks } from '../utils/data'
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo1.png'
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false)
 	const handleToggle = () => {

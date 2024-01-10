@@ -2,8 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import aboutImg from '../assets/photo.jpeg'
 import Title from './Title'
-import Main from './Main'
-
 
 const AboutPage = () => {
 	return (
