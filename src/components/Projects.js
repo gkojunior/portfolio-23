@@ -10,7 +10,7 @@ const allCategories = ['all', ...new Set(projects.map((item) => item.category))]
 const Projects = () => {
 	const [menuItems, setMenuItems] = useState(projects)
 	console.log(projects)
-	const [categories, setCategories] = useState(allCategories)
+	const [categories, ] = useState(allCategories)
 
 	const filterItems = (category) => {
 		if (category === 'all') {
