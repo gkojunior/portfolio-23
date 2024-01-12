@@ -54,7 +54,7 @@ const Wrapper = styled.section`
 	.content {
 		grid-template-columns: 1fr 1fr;
 		column-gap: 3rem;
-		margin-top: 5em;
+		margin-top: 4.5em;
 	}
 	.animation {
 		width: 400px;
