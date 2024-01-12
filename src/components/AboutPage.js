@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import aboutImg from '../assets/photo.jpeg'
+import Certifications from './Certifications'
+import Skills from './Skills'
 import Title from './Title'
 
 const AboutPage = () => {
 	return (
 		<main>
-
 			<Wrapper className='page section section-center'>
 				<img src={aboutImg} alt='lady in beads' />
 				<article>
@@ -15,20 +16,22 @@ const AboutPage = () => {
 					</div>
 
 					<p>
-						Hi! I am George Owusu, a Software Developer. I am a web
-						developer seeking an entry-level engineering position that leverages
-						my educational background, knowledge, skill set, and passion for
+						Hi! I am George Owusu, a Software Developer. I am a web developer
+						seeking an entry-level engineering position that leverages my
+						educational background, knowledge, skill set, and passion for
 						software development. With my current knowlegde and recent
 						certifications, my goal is to add value to any business and
 						contribute to organizational operations.
 					</p>
 				</article>
 			</Wrapper>
-			
+			<Skills />
+			<Certifications />
 		</main>
 	)
 }
 const Wrapper = styled.section`
+	height: 100vh;
 	margin-top: 8rem;
 	display: grid;
 	gap: 4rem;
@@ -44,7 +47,7 @@ const Wrapper = styled.section`
 		max-width: 45em;
 		margin: 0 auto;
 		margin-top: 2rem;
-		color: var(--body_color_brown);
+		color: var(--body_color_grey);
 	}
 	.title {
 		text-align: left;

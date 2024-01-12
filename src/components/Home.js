@@ -8,9 +8,6 @@ function Home() {
 	return (
 		<Wrapper>
 			<Welcome />
-			<Skills />
-			<Certifications />
-			<Connect />
 		</Wrapper>
 	)
 }
@@ -18,10 +15,7 @@ function Home() {
 export default Home
 
 const Wrapper = styled.section`
-	scroll-snap-type: y mandatory;
-	scroll-behavior: smooth;
-	overflow-y: auto;
-	scrollbar-width: none;
+		scrollbar-width: none;
 	&::-webkit-scrollbar {
 		display: none;
 	}
