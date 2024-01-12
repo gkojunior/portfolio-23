@@ -8,8 +8,8 @@ function Certification() {
 	React.useEffect(() => {
 		const typed = new Typed(el.current, {
 			strings: ['Node.JS', 'Express', 'React.JS', 'HTML', 'CSS', 'JavaScript'],
-			typeSpeed: 150,
-			backSpeed: 150,
+			typeSpeed: 100,
+			backSpeed: 100,
 			loop: true,
 		})
 

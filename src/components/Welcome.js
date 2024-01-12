@@ -17,7 +17,7 @@ const Welcome = () => {
 						<p className='welcomeMessage2'>
 							Software Engineer based in Virginia!
 						</p>
-						<div className='typewriter'>
+						<div className='certificationMessage'>
 							<Certification />
 						</div>
 						<footer>
@@ -47,72 +47,80 @@ const Welcome = () => {
 
 const Wrapper = styled.section`
 	height: 100vh;
-	scroll-snap-align: center;
 	align-items: center;
 	text-align: center;
 	justify-content: center;
 
 	.content {
-		display: block;
-		margin-top: 13em;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 3rem;
+		margin-top: 4.5em;
 	}
 	.animation {
-		width: 40%;
-		align-items: center;
-		align-content: center;
+		width: 400px;
 		margin: auto;
 	}
 	.welcome {
 		text-align: center;
 		align-content: center;
-		margin: 6rem 0 0 5rem;
+		padding: 4rem;
 	}
 	.welcomeMessage {
-		color: var(--clr-brown);
+		color: var(--bm_brown);
 		font-size: 2rem;
 	}
 	.welcomeMessage2 {
 		font-size: 2rem;
+		color: var(--revert);
 	}
 	.certificationMessage {
 		font-size: 1.5rem;
-		color: var(--clr-brown);
+		color: var(--body_color_grey);
 	}
 	.typewriter {
 		font-size: 1rem;
 	}
-	// .link {
-	// 	font-size: 2rem;
-	// 	padding: 5px 20px;
-	// }
-	@media screen and (max-width: 320px) {
+	.link {
+		color: var(--bm_brown);
+	}
 
+	@media screen and (max-width: 320px) {
 		.content {
 			display: block;
 		}
+		.animation {
+			width: 80%;
+		}
 	}
 	@media screen and (max-width: 425px) {
-		height: 40vh;
+		height: 100vh;
 
-		.content {
-			height: 50vh;
-			margin-top: 5.5rem;
-		}
 		.welcomeMessage {
-			padding-top: 2rem;
 			font-size: 1.5rem;
 		}
 		.welcomeMessage2,
 		typewriter {
 			font-size: 1.3rem;
 		}
-		.animation, .welcome{
+		.animation,
+		.welcome {
 			margin: auto;
+		}
+		.animation {
+			width: 80%;
 		}
 	}
 
 	@media screen and (min-width: 768px) {
-		height: 50vh;
+		height: 80vh;
+		.welcome {
+			text-align: center;
+			align-content: center;
+			margin: 7rem 0 0 0;
+		}
+		.animation {
+			width: 50%;
+		}
 	}
 	@media screen and (min-width: 900px) {
 		height: 80vh;
@@ -122,12 +130,13 @@ const Wrapper = styled.section`
 			padding: 5px 20px;
 		}
 		.content {
-			display: flex;
+			display: grid;
 		}
-	.welcomeMessage{
-		font-size: 2.5rem;
-	}
-		.animation{
+		.welcomeMessage {
+			font-size: 2.5rem;
+		}
+		.animation {
+			width: 80%;
 			margin: auto;
 		}
 	}

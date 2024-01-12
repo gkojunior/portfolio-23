@@ -32,10 +32,9 @@ const Connect = () => {
 	)
 }
 const Wrapper = styled.section`
-height: 100vh;
-margin-top: 15rem;
+height:100vh
+background:var(--brown);
 	.connect {
-		min-height: 40vh;
 		position: relative;
 		padding: 10rem 0 5rem 0;
 		margin: 5rem 0;
@@ -110,6 +109,11 @@ margin-top: 15rem;
 			display: none;
 		}
 	}
+
+	@media screen and (min-width: 768px) {
+		margin-top:5rem;
+	}
+
 `
 
 export default Connect

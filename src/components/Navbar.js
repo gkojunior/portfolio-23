@@ -17,7 +17,7 @@ const Navbar = () => {
 			<nav className={toggle ? 'navbar expanded' : 'navbar'}>
 				<div className='logoContainer'>
 					{/* <img src={logo} alt='logo' className='logo' /> */}
-					<h4>George K Owusu Jr</h4>
+					<h4 className='logo'>George K Owusu Jr</h4>
 				</div>
 
 				<ul className='links'>
@@ -69,19 +69,15 @@ const NavContainer = styled.nav`
 		justify-content: space-between;
 		align-items: center;
 	}
-	.logo {
-		width: 150px;
-		height: 80px;
-	}
 
 	.navbar .logo {
-		color: rgb(173, 173, 173);
+		color: var(--body_color_grey);
 		font-size: 1.1rem;
 		font-weight: 600;
 	}
 
 	.navbar .links {
-		color: burlywood;
+		color: var(--brown);
 		display: flex;
 		cursor: pointer;
 		list-style: none;
@@ -116,10 +112,7 @@ const NavContainer = styled.nav`
 	}
 
 	@media (max-width: 768px) {
-		.robot {
-			position: fixed;
-			left: 168px;
-		}
+		
 		.navbar {
 			position: relative;
 			transition: 0.5s height ease-in-out;
@@ -181,7 +174,7 @@ const NavContainer = styled.nav`
 			color: var(--clr-brown);
 		}
 		.navbar.expanded .links li a:hover {
-			color: var(--blue);
+			color: var(--brown);
 		}
 		
 		.darkmode {

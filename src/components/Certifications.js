@@ -27,15 +27,10 @@ const Certifications = () => {
 }
 
 const Wrapper = styled.section`
-	scroll-snap-align: center;
 	height: 100vh;
 	padding: 5rem 0;
-	background: var(--body_background2);
-	.section-title {
-		margin-bottom: 4rem;
-		text-align: center;
-		color: var(--body_color_white);
-	}
+	background: var(--body_background);
+
 	.section-title h2 {
 		padding: 1rem;
 		text-transform: uppercase;
@@ -43,14 +38,14 @@ const Wrapper = styled.section`
 	p {
 		margin-bottom: 0;
 		line-height: 1.8;
-		color: var(--body_color);
+		// color: var(--bm_brown);
 	}
 	.services-center {
 		display: grid;
 		gap: 2.5rem;
 	}
 	.service {
-		background: hsl(21, 28%, 58%);
+		background: var(--brown);
 		text-align: center;
 		padding: 2.5rem 2rem;
 		border-radius: var(--radius);
@@ -59,13 +54,15 @@ const Wrapper = styled.section`
 		}
 	}
 	.service:hover {
-		background: var(--body_color);
-		color: var(--clr-white);
+		background: var(--black);
+		color: var(--white);
 	}
 	.service:hover p {
-		color: var(--clr-white);
+		color: var(--white);
 	}
-
+	@media (min-width: 768px) {
+		height: 100vh;
+	}
 	@media (min-width: 992px) {
 		.header {
 			display: grid;

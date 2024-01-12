@@ -1,3 +1,4 @@
+// Used on welcome and footer component
 const SocialLink = ({ itemClass, href, icon }) => {
   return (
     <li>

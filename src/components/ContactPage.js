@@ -1,25 +1,29 @@
 import React from 'react'
 import styled from 'styled-components'
+import Connect from './connect'
 import Title from './Title'
 
 const ContactPage = () => {
 	return (
-		<Wrapper>
-			<section className='section single-page'>
-				<Title title='contact' subTitle='me'/>
+		<>
+			<Wrapper>
+				<section className='section single-page'>
+					<Title title='contact' subTitle='me' />
 
-				<div className='section-center page-info'>
-					<p>
-						For business inquiries and collaborations please reach out to me
-						via email or on any of my social websites. I am looking forward to
-						hearing from you!
-						<a href='mailto:gkojunior@gmail.com'>
-							<button>Email Me</button>
-						</a>
-					</p>
-				</div>
-			</section>
-		</Wrapper>
+					<div className='section-center page-info'>
+						<p>
+							For business inquiries and collaborations please reach out to me
+							via email or on any of my social websites. I am looking forward to
+							hearing from you!
+							<a href='mailto:gkojunior@gmail.com'>
+								<button>Email Me</button>
+							</a>
+						</p>
+					</div>
+				</section>
+			</Wrapper>
+			<Connect />
+		</>
 	)
 }
 const Wrapper = styled.section`

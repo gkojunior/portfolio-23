@@ -76,20 +76,24 @@ const Skills = () => {
 	)
 }
 const Wrapper = styled.section`
-background: var(--body_background2);
-scroll-snap-align:center;
-height: 100vh;
+	background: var(--body_background2);
+	transition: 0.5s height ease-in-out;
+
+.skills{
+	height:100vh;
+}
 	.section-title {
 		margin-bottom: 0.5rem;
 		text-align: center;
-		color: var(--body_color_white);
 	}
 	.section-title h2 {
-		padding: 1rem;
+		padding-top: 10rem;
 	}
 	@media screen and (min-width: 320px) {
-		height: 80vh;
-
+		.skills{
+			height:100vh;
+	
+		}
 	}
 
 	@media screen and (min-width: 768px) {
@@ -102,14 +106,10 @@ height: 100vh;
 			-moz-column-gap: 2rem;
 			column-gap: 2rem;
 		}
-		.clock {
-			display: none;
-		}
 	}
-	
 	.skills h3 {
 		margin: 1.5rem 0;
-		color: var(--body_color_brown);
+		color: var(--revert);
 	}
 	.skill {
 		margin-bottom: 1.25rem;
@@ -117,27 +117,28 @@ height: 100vh;
 	.skill p {
 		margin-bottom: 0.5rem;
 		text-transform: capitalize;
-		color: var(--body_color_white);
+		color: var(--body_color_grey);
+
 	}
 	.skill-container {
-		background: var(--clr-brown-dark);
 		height: 1rem;
 		width: 100%;
 		border-radius: 50px;
 		position: relative;
+		background: var(--body_background);
 	}
 	.skill-value {
 		position: absolute;
 		top: 0;
 		left: 0;
-		background: var(--body_color_grey);
+		background: var(--bm_brown);
 		height: 100%;
 		width: 90%;
 		border-radius: 50px;
 	}
 	.value-30 {
 		width: 30%;
-		color: var(--body_color_white);
+		color: var(--body_background);
 	}
 	.value-50 {
 		width: 50%;

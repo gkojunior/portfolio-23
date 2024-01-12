@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+// Shows the different type of lanaguages on my portfolio page
 const Categories = ({ categories, filterItems }) => {
 	return (
 		<Wrapper>
